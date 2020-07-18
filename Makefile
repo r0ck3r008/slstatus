@@ -41,6 +41,7 @@ config.h:
 
 slstatus: slstatus.o $(COM:=.o) $(REQ:=.o)
 	$(CC) -o $@ $(LDFLAGS) $(COM:=.o) $(REQ:=.o) slstatus.o $(LDLIBS)
+	make clean
 
 clean:
 	rm -f slstatus slstatus.o $(COM:=.o) $(REQ:=.o)
