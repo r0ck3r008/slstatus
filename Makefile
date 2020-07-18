@@ -44,7 +44,7 @@ slstatus: slstatus.o $(COM:=.o) $(REQ:=.o)
 	make clean
 
 clean:
-	rm -f slstatus slstatus.o $(COM:=.o) $(REQ:=.o)
+	rm -f slstatus.o $(COM:=.o) $(REQ:=.o)
 
 dist:
 	rm -rf "slstatus-$(VERSION)"
